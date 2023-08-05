@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+</head>
+<body>
+<nav th:fragment="navbar">
+    <a class="navLeft" th:href="@{/}">
+    <div id="navLeft">
+        <span id="top1" class="topLogo">J</span>
+        <span id="top2" class="topLogo">X</span>
+        <span id="top3" class="topLogo">F</span>
+    </div>
+    </a>
+    <div id="navRight">
+        <a th:href="@{/}"><span>Home</span></a>
+        <a th:href="@{/about}"><span>About</span></a>
+        <a th:href="@{/projects}"><span>My Work</span></a>
+        <a th:href="@{/contact}"><span>Contact Me</span></a>
+    </div>
+    <div id="navIcons">
+        <a th:href="@{https://www.linkedin.com/in/j-xavier-francis/}" target="_blank"><i class="fa-brands fa-linkedin fa-lg" style="color: #ffffff;"></i></a>
+        <a th:href="@{https://github.com/XavierFrancis9}" target="_blank"><i class="fa-brands fa-github fa-lg" style="color: #ffffff;"></i></a>
+        <a th:href="@{/files/xavier_francis_resume.pdf}" target="_blank"><i class="fa-regular fa-file fa-lg" style="color: #ffffff;"></i></a>
+    </div>
+</nav>
+
+</body>
+</html>
